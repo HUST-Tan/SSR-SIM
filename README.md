@@ -25,19 +25,19 @@
 
 - Install of dependencies required following [requirements](requirements.txt)
 
-- See SIR_core/ReadMe.txt to configure binary reconstruction package (for python 3.8 and 3.10).
+- See [SIR configuration](SIR_core/ReadMe.txt) to configure binary reconstruction package (for python 3.8 and 3.10).
 
 - Run Demo/Demo_Train_SSRSIM_On_BioSR.py
 
 ### Zero-Shot SSR-SIM imaging of F-actin (LifeAct) in COS-7 cells
 
-- Download LifeAct dataset (30 timepoints by using SSR-SIM imaging SSR-SIM ) from [Link](https://drive.google.com/file/d/1VMe_RfTZg3eaEyo8XUrgNZau775pvE88/view?usp=drive_link)
+- Download LifeAct dataset (30 timepoints by using SSR-SIM imaging SSR-SIM ) from [Link](https://figshare.com/articles/dataset/SSR-SIM_Dataset/30406366)
 
 - Unzip them to path like: path="home/LifeAct" (Linux) or path=r"K:\LifeAct" (Windows)
 
 - Install of dependencies required following [requirements](requirements.txt)
 
-- See SIR_core/ReadMe.txt to configure binary reconstruction package (for python 3.8 and 3.10).
+- See [SIR configuration](SIR_core/ReadMe.txt) to configure binary reconstruction package (for python 3.8 and 3.10).
 
 - Run Demo/Demo_ZeroShot_LifeAct.py
 
