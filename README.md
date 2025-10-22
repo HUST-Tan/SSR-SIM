@@ -43,7 +43,7 @@
 
 ### json path
 
-This code is written and tested in PyCharm, Windows and Linux. If the error ".mrc files cannot be found" occurs when running the code in other manners, it indicates that the relative path of the .jsons file is incorrect. Users can modify the json files in the SIR_options and SSR_options by removing the "..\" to resolve this issue.
+This code is written and tested in PyCharm, Windows and Linux. If the error ".mrc files cannot be found" occurs when running the code in other manners, it indicates that the relative path of the .jsons file is incorrect. Users can modify the json files in the SIR_options and SSR_options by removing the "..\\" to resolve this issue.
 
 ## Citation
 If you use SSR-SIM, please consider citing:
