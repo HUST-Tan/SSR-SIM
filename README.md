@@ -1,6 +1,6 @@
 # SSR-SIM: Bio-friendly and high-precision super-resolution imaging through self-supervised reconstruction structured illumination microscopy
 
-[Paper](https://arxiv.org/xx) | [Dataset](https://figshare.com/xx)
+[Paper](https://www.nature.com/nmeth/) | [Dataset](https://figshare.com/articles/dataset/SSR-SIM_Dataset/30406366)
 
 
 <hr />
@@ -33,7 +33,7 @@
 
 - Download LifeAct dataset (30 timepoints by using SSR-SIM imaging SSR-SIM ) from [Link](https://drive.google.com/file/d/1VMe_RfTZg3eaEyo8XUrgNZau775pvE88/view?usp=drive_link)
 
-- Unzip them to path like: path="home/LifeAct" (Linux) or path=r"E:\LifeAct" (Windows)
+- Unzip them to path like: path="home/LifeAct" (Linux) or path=r"K:\LifeAct" (Windows)
 
 - Install of dependencies required following [requirements](requirements.txt)
 
@@ -41,9 +41,9 @@
 
 - Run Demo/Demo_ZeroShot_LifeAct.py
 
-### OTF path
+### json path
 
-The code is debugged in PyCharm/Linux command line. If the error "OTF .mrc files cannot be found" occurs when running the code, it indicates that the relative path of the OTF file is incorrect (the starting path for running the code does not match). You can modify the otf_path in the files biosr_lownagi_488.json, biosr_tirf_488.json, and multisim002_tirf_488.json in the SIR_options by removing the "..\" to resolve this issue.
+This code is written and tested in PyCharm, Windows and Linux. If the error ".mrc files cannot be found" occurs when running the code in other manners, it indicates that the relative path of the .jsons file is incorrect. Users can modify the json files in the SIR_options and SSR_options by removing the "..\" to resolve this issue.
 
 ## Citation
 If you use SSR-SIM, please consider citing:
