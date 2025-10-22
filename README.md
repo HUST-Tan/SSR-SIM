@@ -29,7 +29,7 @@
 
 - Run Demo/Demo_Train_SSRSIM_On_BioSR.py
 
-### Zero-Shot SSR-SIM imaging of F-actin (mEmerald-LifeAct) in COS-7 cells
+### Zero-Shot SSR-SIM imaging of F-actin (LifeAct) in COS-7 cells
 
 - Download LifeAct dataset (30 timepoints by using SSR-SIM imaging SSR-SIM ) from [Link](https://drive.google.com/file/d/1VMe_RfTZg3eaEyo8XUrgNZau775pvE88/view?usp=drive_link)
 
