@@ -1,0 +1,43 @@
+{
+
+// camemra
+    "camera_background": 100
+
+// objective
+    ,"na": 1.3
+    ,"refractive_index": 1.515
+    ,"otf_path": "..\\OTFs\\Olympus_bioSR_2D\\TIRF488_cam1_0_z30_OTF2d.mrc" // "OTFs\\Olympus_bioSR_2D\\TIRF488_cam1_0_z30_OTF2d.mrc"
+    //  If the error "OTF .mrc files cannot be found" occurs when running the code, it indicates that the relative path of the OTF
+    // file is incorrect (the starting path for running the code does not match). You can modify the otf_path in the files
+    // biosr_lownagi_488.json, biosr_tirf_488.json, and multisim002_tirf_488.json in the SIR_options by removing the "..\" to resolve this issue.
+
+// if lattice
+    ,"if_Bessel": false
+
+// pattern
+    ,"k0_rotate_negative": false
+    ,"k0_start_angle": 1.48
+    ,"linespacing": 0.173 // .173 / .18 for TIRF / GI
+    ,"if_force_modamp": true
+    ,"force_modamp": [0.5]
+
+// apodizex`
+    ,"num_apodize": 10
+    ,"output_apodize_type": 1 // 1 cosine | 3 gamma
+
+// re-scale
+    ,"if_rescale": true
+
+// attenuation
+    ,"if_attenuation": true
+    ,"attenuation_rate": [0.0, 0.7] // Clathrin=[0.0, 0.4], LifeAct=[0.0, 0.7]
+    ,"attenuation_radius": 6
+
+// wiener
+    ,"wiener_para": 0.01
+
+//  zoom
+    ,"zoom_factor_xy": 2
+    ,"zoom_factor_z": 1
+
+}

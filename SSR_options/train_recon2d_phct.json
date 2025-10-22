@@ -1,0 +1,42 @@
+{
+  // task
+  "data": "2d-sim"
+  , "model": "reconstruction"  // reconstruction | cycle-raw-reconstruction | cycle-wf-reconstruction
+  , "supervise": "self-supervised-val" // full-supervised | self-supervised-val | self-supervised
+
+  // dataset
+  , "dataset_root": ""
+
+  // network
+  , "net_G": "phct"
+  , "net_G_para1": "RLFB+ET+Conv3" // "RLFB+ET+Conv3" / "2*RLFB+ET+Conv3" / "3*RLFB+ET+Conv3"
+  , "net_G_para2": "RLFB+ET+Conv3" // "RLFB+ET+Conv3" / "2*RLFB+ET+Conv3" / "3*RLFB+ET+Conv3"
+  , "net_G_para3": true
+  , "net_G_para4": 48 // ranging from 32 to 64
+
+  // training-init
+  , "pretrained_netG": null      // path of pretrained model
+  , "init_type": "kaiming_normal"         // "orthogonal" | "kaiming_normal" | "kaiming_uniform" | "xavier_normal" | "xavier_uniform"
+  , "init_gain": 0.2
+
+  // training-dataset
+  , "dataloader_num_workers": 4   // ranging from 1 to Max_Num_Of_CPU_Threads
+  , "dataloader_batch_size": 4     // ranging from 1 to 16
+  , "in_patch_size": 256                    // ranging from 512 to 96
+  , "dataaug_random_angle_rotate": false
+
+  // training-optimization
+  , "G_lossfn_type": "mse"   // mae | mse
+  , "G_optimizer_type": "adamw"
+  , "G_optimizer_lr": 3e-4            // ranging from 1e-4 to 5e-4
+  , "G_optimizer_weight_decay": 0.0   // ranging from 0. to 3e-2
+  , "G_scheduler_type": "CosineAnnealingLR"
+  , "G_scheduler_IterNum": 200000  // ranging from 50000 to 200000
+  , "G_scheduler_MinLR": 1e-6
+
+  // checkpoint
+  , "num_iter_interval_val": 1000
+  , "num_iter_interval_save": 1000
+  , "num_iter_interval_print": 100
+  , "save_all_val_images": false
+}

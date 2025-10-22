@@ -1,0 +1,27 @@
+# [python==3.10.10 and torch==2.5.1] and [python==3.8.10 and torch==1.13.1] are tested to be feasible
+
+# [important] Users need to extract the compiled PYD file under sir_core folder according to the user's used Python version
+
+bitarray==3.0.0
+
+imageio==2.36.0
+
+matplotlib==3.9.2
+
+numpy==1.23.5
+# Numpy version of 1.x is recommended since Numpy version 2.x may be incompatible with other packages
+
+opencv-python==4.10.0.84
+
+scipy==1.10.1
+# Higher versions of scipy may cause compatibility errors.
+
+tifffile==2024.9.20
+
+torch==2.5.1+cu124
+# For users using novel NVIDIA graphics cards (manufactured in 2023 and later), we recommend using newer torch and CUDA versions like torch==2.5.1+cu124; Also SSR-SIM is tested on torch==1.8.1
+
+torchvision==0.20.1+cu124
+# The torchvision version needs to match the torch version
+
+thop==0.1.1.post2209072238 # optional
